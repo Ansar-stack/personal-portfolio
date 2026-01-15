@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+.gradiant-bg{
+    background: linear-gradient(20deg, rgb(23, 30, 120),#0A192F,#0A192F  );
+}
+body{
+    @apply font-mono overflow-x-hidden dark:bg-[#0A192F] bg-white
+}
+.transparentButton{
+    @apply border dark:border-white border-gray-700 text-black dark:text-white hover:text-[#0A192F] hover:border-[#0A192F] relative overflow-hidden transition-all duration-300 
+}
+.transparentButton::before{
+    content: "";
+    @apply w-full h-full bg-[#64FFDA]  absolute rounded-md top-0 -left-full z-[-10] transition-all duration-300 ease-in
+}
+.transparentButton:hover::before{
+    left: 0;
+}
+.primaryButton{
+    @apply text-[#0A192F] bg-[#64FFDA] rounded-md
+}
+.allright{
+    text-align-last: center;
+}
+.form{
+    @apply flex flex-col gap-4 w-full  p-3 mt-5 border border-[#8892B0] rounded-md hover:-translate-y-1  hover:shadow-[0_0_10px_0px_#64FFDA50] transition-all duration-200 ease-in
+}
+
+/* Scroll Bar Style */
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: #112240;
+}
+::-webkit-scrollbar{
+    width: 4px;
+    background-color: #112240;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 15px;
+    background-color: #64FFDA;
+}
+
+
+@media screen and (max-width: 900px){
+    .aboutPage{
+        flex-direction: column-reverse;
+        margin-top: 30px;
+        align-items: center;
+        justify-content: start;
+        padding: 0;
+    }
+    .imageContainer{
+        margin-top: 0;
+    }
+    .image{
+        width: 220px;
+        height: 220px;
+    }
+    .aboutTextPart{
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .projectPage {@apply px-1}
+    .projectCard {@apply p-1}
+    .name{@apply text-xl}
+    .typeWriter {@apply text-lg}
+}
