@@ -2,7 +2,7 @@ import React from "react";
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 const Social = () => {
   const socialLinks = [
-    { href: "#", icon: <FaLinkedin/> },
+    { href: "https://www.linkedin.com/in/ansar-khan-56a25a362", icon: <FaLinkedin/> },
     { href: "https://github.com/Ansar-stack/", icon: <FaGithub/> },
     { href: "#", icon: <FaInstagram/> },
     { href: "#", icon: <FaTwitter/> },

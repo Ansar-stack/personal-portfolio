@@ -45,21 +45,19 @@ const AboutPage = () => {
           </div>
 
           {/* Type Writer */}
-         <div className="text-lg w-full typeWriter sm:text-[20px] lg:text-[33px] dark:text-white text-[#100f0f] flex gap-4 items-center justify-center sm:justify-start text-center sm:text-left">
-            {/* FIX IS HERE */}
-            <div className="whitespace-nowrap">
-              I'm a{" "}
-            </div>
-            <span className="text-[#64FFDA] font-semibold">
-              <TypeWriter
-                options={{
-                  strings: stacks,
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            </span>
-          </div>
+        <div className="text-lg w-full typeWriter sm:text-[20px] lg:text-[33px] dark:text-white text-[#100f0f] flex gap-2 justify-center sm:justify-start">
+  <span className="whitespace-nowrap inline-block">I'm a</span>
+  <span className="text-[#64FFDA] font-semibold">
+    <TypeWriter
+      options={{
+        strings: stacks,
+        autoStart: true,
+        loop: true,
+      }}
+    />
+  </span>
+</div>
+
 
           <div className="dark:text-[#8892B0] text-[#100f0f] text-md sm:text-lg lg:text-xl my-5 max-w-3xl text-justify">
             {description}
