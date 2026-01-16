@@ -1,11 +1,12 @@
-import calcora from './assets/calcora.png'
-import editor from './assets/codeEditor.png'
+import ecommerce from './assets/ecommerce.png';
+import calcora from './assets/calcora.png';
+import editor from './assets/codeEditor.png';
 export const projects = [
   {
     id: 1,
     title: "Grocery E-commerce",
     description: "A full-featured e-commerce platform for grocery shopping, currently in develpment.",
-    image: calcora,
+    image: ecommerce,
     liveURL: "https://github.com/Ansar-stack/fullstack-groceries-ecommerce",
     githubURL: "https://github.com/Ansar-stack/fullstack-groceries-ecommerce",
     stack: ["MongoDb", "React", "Express", "Node"],
