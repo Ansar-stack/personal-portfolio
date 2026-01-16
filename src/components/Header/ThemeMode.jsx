@@ -6,7 +6,6 @@ const ThemeMode = () => {
     useEffect(()=>{
         document.documentElement.classList.toggle('dark', theme);
         localStorage.setItem('theme', theme);
-        console.log(theme);
     }, [theme]);
   return (
     <button
