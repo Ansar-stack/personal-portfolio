@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Button from "../components/Button";
 import Particles from "../components/magicui/Particles";
 import TypeWriter from 'typewriter-effect'
+import myImage from '../assets/myImage.png'
 const stacks = ["Full Stack Developer", "Frontend Developer", "Backend Developer", "Software Engineer"];
 const description = "I’m a motivated full-stack developer with a strong focus on modern web development. I build responsive, user-friendly interfaces and reliable backend systems, writing clean and scalable code. I enjoy solving real-world problems and continuously improving my skills through practical projects."
 const AboutPage = () => {
@@ -54,7 +55,7 @@ const AboutPage = () => {
         </div>
         {/* Image Part */}
         <div className="mt-12">
-         <img src='myImage.png' alt="" className="w-66 bg-center bg-no-repeat bg-cover h-66  rounded-full shadow-[0_0px_10px_5px_#64FFDA50]" />
+         <img src={myImage} alt="" className="w-66 bg-center bg-no-repeat bg-cover h-66  rounded-full shadow-[0_0px_10px_5px_#64FFDA50]" />
         </div>
       </div>
     </>
