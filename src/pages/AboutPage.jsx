@@ -54,7 +54,7 @@ const AboutPage = () => {
         </div>
         {/* Image Part */}
         <div className="mt-12">
-         <img src='/myImage.png' alt="" className="w-66 bg-center bg-no-repeat bg-cover h-66  rounded-full shadow-[0_0px_10px_5px_#64FFDA50]" />
+         <img src='myImage.png' alt="" className="w-66 bg-center bg-no-repeat bg-cover h-66  rounded-full shadow-[0_0px_10px_5px_#64FFDA50]" />
         </div>
       </div>
     </>
