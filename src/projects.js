@@ -1,16 +1,16 @@
 export const projects = [
   {
     id: 1,
-    title: "URL Shortner",
+    title: "Ecommerce Groceries",
     description: "A full stack project where you can short your url quickly.",
     image: '/projects-images/img.jpg',
     liveURL: "https://calcora.us/",
-    githubURL: "https://github.com/",
+    githubURL: "https://github.com/calcora.us/",
     stack: ["MongoDb", "React", "Express", "Node"],
   },
   {
     id: 2,
-    title: "URL Shortner",
+    title: "Calcora.us",
     description: "A full stack project where you can short your url quickly.",
     image: '/img.jpg',
     liveURL: "https://calcora.us/",
