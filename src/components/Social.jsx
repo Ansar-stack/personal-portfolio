@@ -3,7 +3,7 @@ import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 const Social = () => {
   const socialLinks = [
     { href: "#", icon: <FaLinkedin/> },
-    { href: "#", icon: <FaGithub/> },
+    { href: "https://github.com/Ansar-stack/", icon: <FaGithub/> },
     { href: "#", icon: <FaInstagram/> },
     { href: "#", icon: <FaTwitter/> },
   ];

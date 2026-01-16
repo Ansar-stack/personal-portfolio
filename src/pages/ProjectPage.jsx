@@ -14,7 +14,7 @@ const ProjectPage = () => {
       <div className="flex flex-wrap  gap-5 mt-5 justify-center">
       {projects.map((elem)=>(
         <ProjectCard key={elem.id} title={elem.title} description={elem.description}
-        githubURL={elem.githubURL} liveURL={elem.liveURL} image={elem.image}/>
+        githubURL={elem.githubURL} liveURL={elem.liveURL} image={elem.image} stack={elem.stack}/>
       ))}
       </div>
     </div>
